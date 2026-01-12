@@ -1,6 +1,6 @@
 package org.example.model;
 
-abstract class ProductForSale {
+public abstract class ProductForSale {
     private String type;
     private double price;
     private String description;
@@ -23,8 +23,8 @@ abstract class ProductForSale {
         this.description = description;
     }
 
-    double getSalesPrice(int quantity){
-        return quantity*this.price;
+    public double getSalesPrice(int quantity){
+        return quantity*price;
     }
-    abstract void showDetails();
+    public abstract void showDetails();
 }

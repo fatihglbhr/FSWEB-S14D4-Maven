@@ -7,6 +7,13 @@ public class Chocolate extends ProductForSale{
     }
 
     @Override
+    public void showDetails() {
+        System.out.println(getType());
+        System.out.println(getPrice());
+        System.out.println(getDescription());
+    }
+
+    @Override
     public String toString() {
         return "Chocolate{" +
                 "gram=" + gram +

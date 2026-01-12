@@ -17,7 +17,10 @@ public class Coke extends ProductForSale{
     }
 
     @Override
-    void showDetails() {
-        System.out.println();
+    public void showDetails() {
+        System.out.println(litre);
+        System.out.println(getType());
+        System.out.println(getPrice());
+        System.out.println(getDescription());
     }
 }
